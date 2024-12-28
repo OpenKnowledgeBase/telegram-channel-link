@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Telegram Group</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎓 Join the BCA Telegram Group</h1>
+        <p class="changing-text" id="changing-text"></p>
+        <a href="https://t.me/bcagroupstudents001" target="_blank" class="cta-button">🚀 Join Now</a>
+    </header>
+    <div class="features container">
+        <div class="feature">
+            <i class="fas fa-book"></i>
+            <h3>Previous Year Questions</h3>
+            <p>Access a library of past exam papers to prepare better.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-pencil-alt"></i>
+            <h3>Notes & Assignments</h3>
+            <p>Get well-organized notes and assignments for free.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Study Resources</h3>
+            <p>Find all essential resources to help you succeed.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Exam Tips</h3>
+            <p>Learn from experts how to perform exceptionally in exams.</p>
+        </div>
+    </div>
+    <footer>
+        <p>📌 Hurry! The link will expire soon. Join now to boost your studies! 🌟</p>
+    </footer>
+
+    <script>
+     
+        const textElement = document.getElementById("changing-text");
+        const texts = [
+            "📚 Get Previous Year Questions",
+            "📝 Download Notes & Assignments",
+            "🎯 Study Resources in One Place",
+            "💡 Ace Exams with Top Tips"
+        ];
+        let index = 0;
+
+        function changeText() {
+            textElement.textContent = texts[index];
+            index = (index + 1) % texts.length;
+        }
+        setInterval(changeText, 3000); 
+        changeText(); 
+    </script>
+</body>
+</html>
